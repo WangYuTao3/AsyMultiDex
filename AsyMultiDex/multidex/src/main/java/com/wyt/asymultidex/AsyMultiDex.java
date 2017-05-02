@@ -23,8 +23,8 @@ public class AsyMultiDex {
         if (!DexInstallUtils.isVMMultiDexCapable()) {
             if (!DexInstallUtils.isMultiDexInstalled(context)) {
                 DexInstallUtils.waitForDexInstall(context);
-                MultiDex.install(context);
             }
+            MultiDex.install(context);
         }
     }
 
