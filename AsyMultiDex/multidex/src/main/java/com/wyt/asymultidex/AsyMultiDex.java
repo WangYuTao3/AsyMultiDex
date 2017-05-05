@@ -19,7 +19,6 @@ public class AsyMultiDex {
      * @param context
      */
     public static void install(Context context) {
-        // vm是否支持multiDex，支持就不合并了
         if (!DexInstallUtils.isVMMultiDexCapable()) {
             if (!DexInstallUtils.isMultiDexInstalled(context)) {
                 DexInstallUtils.waitForDexInstall(context);

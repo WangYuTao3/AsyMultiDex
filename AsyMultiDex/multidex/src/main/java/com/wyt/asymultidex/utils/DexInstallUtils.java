@@ -184,26 +184,4 @@ public class DexInstallUtils {
         }
         return new PackageInfo();
     }
-
-    /**
-     * 是否是主进程
-     *
-     * @param context
-     * @return
-     */
-    public static boolean isMainProcess(Context context) {
-        return context.getPackageName().equals(getProcessName(context));
-    }
-
-    public static String getProcessName(Context context) {
-        int pid = android.os.Process.myPid();
-        ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
-        List<ActivityManager.RunningAppProcessInfo> infos = manager.getRunningAppProcesses();
-        for (ActivityManager.RunningAppProcessInfo info : infos) {
-            if (info.pid == pid) {
-                return info.processName;
-            }
-        }
-        return null;
-    }
 }
