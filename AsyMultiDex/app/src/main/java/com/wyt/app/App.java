@@ -8,7 +8,7 @@ import com.wyt.asymultidex.AsyMultiDex;
 
 /**
  * Created by wangyt on 2017/5/2.
- * : description
+ * : asy multi dex Application
  */
 
 public class App extends Application {
@@ -23,9 +23,6 @@ public class App extends Application {
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
-        if (AsyMultiDex.isDexInstallProcess(this)) {
-            return;
-        }
         AsyMultiDex.install(this);
     }
 

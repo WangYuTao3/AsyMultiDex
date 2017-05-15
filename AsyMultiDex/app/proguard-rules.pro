@@ -23,3 +23,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# multiDex 不混淆
+-keep class cn.taqu.lib.base.multidex.**{*;}

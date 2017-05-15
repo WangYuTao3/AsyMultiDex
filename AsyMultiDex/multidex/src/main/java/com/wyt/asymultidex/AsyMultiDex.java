@@ -19,12 +19,17 @@ public class AsyMultiDex {
      * @param context
      */
     public static void install(Context context) {
+        if (AsyMultiDex.isDexInstallProcess(context)) {
+            return;
+        }
+        // vm是否支持multiDex，加载进程中不再加载
         if (!DexInstallUtils.isVMMultiDexCapable()) {
             if (!DexInstallUtils.isMultiDexInstalled(context)) {
                 DexInstallUtils.waitForDexInstall(context);
             }
-            MultiDex.install(context);
         }
+        //再进行一次multiDex(如果进行过dex合并，此步骤会非常快)，加此步骤确保不会出错
+        MultiDex.install(context);
     }
 
     /**
