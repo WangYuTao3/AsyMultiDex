@@ -1,19 +1,17 @@
-#AsyMultiDex
+# AsyMultiDex
 
 
-
-##why AsyMultiDex? 
+## why AsyMultiDex? 
 
 * MultiDex may cause anr when app init（4.4 or lower）；
 
-##how to do AsyMultiDex？
+## how to do AsyMultiDex？
 
 * Create a process to do MultiDex work；
 * Blocks The main process whether the MultiDex is loaded；
 * Init app when the MultiDex is complete；
 
-##build in AsyMultiDex
-ference sample;
+## build in AsyMultiDex
 
 * step 1:add module "multiDex" as your lib;
 	
