@@ -8,8 +8,8 @@
 ## how to do AsyMultiDex？
 
 * Create a process to do MultiDex work；
-* Blocks The main process whether the MultiDex is loaded；
-* Init app when the MultiDex is complete；
+* Blocks the main process whether the MultiDex has loaded；
+* Init app when the MultiDex has completed；
 
 ## build in AsyMultiDex
 
