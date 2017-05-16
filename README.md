@@ -11,7 +11,7 @@
 * Blocks the main process whether the MultiDex has loaded；
 * Init app when the MultiDex has completed；
 
-## build in AsyMultiDex
+## usage
 
 * step 1:add module "multiDex" as your lib;
 	
