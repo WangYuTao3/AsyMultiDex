@@ -1,11 +1,11 @@
 # AsyMultiDex
 
 
-## why AsyMultiDex? 
+## why  
 
 * MultiDex may cause anr when app init（4.4 or lower）；
 
-## how to do AsyMultiDex？
+## how 
 
 * Create a process to do MultiDex work；
 * Blocks the main process whether the MultiDex has loaded；
