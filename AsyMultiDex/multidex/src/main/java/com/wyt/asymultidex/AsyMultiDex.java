@@ -28,7 +28,7 @@ public class AsyMultiDex {
                 DexInstallUtils.waitForDexInstall(context);
             }
         }
-        //再进行一次multiDex(如果进行过dex合并，此步骤会非常快)，加此步骤确保不会出错
+        //再进行一次multiDex(如果进行过dex合并，此步骤会非常快)
         MultiDex.install(context);
     }
 
